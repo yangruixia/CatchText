@@ -95,8 +95,6 @@ for index, row in tqdm(data.iterrows(), total=len(data), ncols=100):
 
         content = td_element.text
 
-        print(content)
-
         time.sleep(wait_time)
 
         homepage = WebDriverWait(driver, wait_time).until(
